@@ -5,7 +5,7 @@
         <div style="padding: 10px; text-align: center;">{{ message }}</div>
     {% endif %}
 
-    <form style="padding: 10px; text-align: center;" action="{% url 'login' %}" method="post">
+    <form style="padding: 10px; text-align: center;" action="{% url 'users:login' %}" method="post">
         {% csrf_token %}
         <input type="text" name="username" placeholder="username...">
         <input type="password" name="password" placeholder="password...">
